@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>VIM</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<style>
+  body{background:#282A2D;color:#A9A9B3;}
+  h1,h2,h3{color:#F05F70;}
+</style>
+<body>  
+    <div class="py-10">
+      <div class="text-center container mx-auto px-20">
+        <h2 class="text-6xl font-bold mb-2 text-black">
+          VIM
+        </h2>
+	<h3 class="text-3xl mb-8 text-black-200">Uso básico de vim</h3>
+	<div class="w-60 mx-auto"><img src="http://redmine.cautivatech.com/redmine/attachments/download/539/vim-logo-png-transparent.png" />
+</div>
+      </div>
+    </div>
+    
+    <!-- commands -->
+    <section class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center  mb-8">Commands</h2>
+      <div class="flex flex-col">
+    <div>
+        <div class="flex w-10/12 flex-col mx-auto">
+            <div class="w-full border py-4 px-4 text-lg font-bold text-center">Movimientos</div>
+            <div class="flex flex-row  border-l border-r border-b">
+                <div class="w-1/2 py-4 px-4 border-r">Comando</div>
+                <div class="w-1/2 py-4 px-4">Descripción</div>
+            </div>
+        </div>
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+            <div class="w-1/2 py-1 px-4 border-r">j</div>
+            <div class="w-1/2 py-1 px-4">Desplazamiento hacia abajo</div>
+        </div>
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+            <div class="w-1/2 py-1 px-4 border-r">k</div>
+            <div class="w-1/2 py-1 px-4">Desplazamiento hacia arriba</div>
+        </div>
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+            <div class="w-1/2 py-1 px-4 border-r">l</div>
+            <div class="w-1/2 py-1 px-4">Desplazamiento hacia la derecha</div>
+        </div>
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+            <div class="w-1/2 py-1 px-4 border-r">h</div>
+            <div class="w-1/2 py-1 px-4">Desplazamiento hacia izquierda</div>
+        </div>
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+            <div class="w-1/2 py-1 px-4 border-r">ctrl + d</div>
+            <div class="w-1/2 py-1 px-4">Desplazamiento hacia abajo mitad de pantalla</div>
+        </div>
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+            <div class="w-1/2 py-1 px-4 border-r">ctrl + d</div>
+            <div class="w-1/2 py-1 px-4">Desplazamiento hacia arriba mitad de pantalla</div>
+        </div>   
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+            <div class="w-1/2 py-1 px-4 border-r">número + j/k</div>
+            <div class="w-1/2 py-1 px-4">Desplaza la cantidad de líneas hacia abajo/arriba</div>
+        </div>
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+            <div class="w-1/2 py-1 px-4 border-r">w</div>
+            <div class="w-1/2 py-1 px-4">Avanza una palabra hacia adelante</div>
+        </div>
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+            <div class="w-1/2 py-1 px-4 border-r">b</div>
+            <div class="w-1/2 py-1 px-4">Retrocede una palabra hacia atrás</div>
+        </div>
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+            <div class="w-1/2 py-1 px-4 border-r">número + w/b</div>
+            <div class="w-1/2 py-1 px-4">Desplaza la cantidad de palabras hacia adelante/atrás</div>
+        </div>      
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+            <div class="w-1/2 py-1 px-4 border-r">gg</div>
+            <div class="w-1/2 py-1 px-4">Ir al inicio del documento</div>
+        </div>
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+            <div class="w-1/2 py-1 px-4 border-r">G</div>
+            <div class="w-1/2 py-1 px-4">Ir al final del documento</div>
+        </div>   
+    </div>
+    <div>
+        <div class="flex w-10/12 flex-col mx-auto">
+            <div class="w-full border-l border-r border-b py-4 px-4 text-lg font-bold text-center">Edición</div>
+            <div class="flex flex-row  border-l border-r border-b">
+                <div class="w-1/2 py-4 px-4 border-r">Comando</div>
+                <div class="w-1/2 py-4 px-4">Descripción</div>
+            </div>
+        </div>
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+            <div class="w-1/2 py-1 px-4 border-r">i</div>
+            <div class="w-1/2 py-1 px-4">Insertar antes del cursor</div>
+        </div>
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+            <div class="w-1/2 py-1 px-4 border-r">a</div>
+            <div class="w-1/2 py-1 px-4">Insertar después del cursor</div>
+        </div>
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+            <div class="w-1/2 py-1 px-4 border-r">I</div>
+            <div class="w-1/2 py-1 px-4">Insertar al inicio de la línea</div>
+        </div>
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+            <div class="w-1/2 py-1 px-4 border-r">A</div>
+            <div class="w-1/2 py-1 px-4">Insertar al final de la línea</div>
+        </div>
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+            <div class="w-1/2 py-1 px-4 border-r">o</div>
+            <div class="w-1/2 py-1 px-4">Insertar debajo de la línea actual</div>
+        </div>
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+            <div class="w-1/2 py-1 px-4 border-r">O</div>
+            <div class="w-1/2 py-1 px-4">Insertar arriba de la línea actual</div>
+        </div>
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+            <div class="w-1/2 py-1 px-4 border-r">yy/Y</div>
+            <div class="w-1/2 py-1 px-4">Copia la línea actual</div>
+        </div>
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+            <div class="w-1/2 py-1 px-4 border-r">p</div>
+            <div class="w-1/2 py-1 px-4">Pega debajo del cursor</div>
+        </div>
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+            <div class="w-1/2 py-1 px-4 border-r">P</div>
+            <div class="w-1/2 py-1 px-4">Pega arriba del cursor</div>
+        </div>
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+            <div class="w-1/2 py-1 px-4 border-r">d</div>
+            <div class="w-1/2 py-1 px-4">Marcador de eliminar (dw elimina la palabra en la que se encuentra el cursor)</div>
+        </div>  
+    </div>
+    <div>
+	<div class="flex w-10/12 flex-col mx-auto">
+            <div class="w-full border py-4 px-4 text-lg font-bold text-center">Cómo @#%#(* salgo de vim???
+	      <div class="w-1/2 mx-auto"><div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/KiXiO1iR3fFhC" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+</div>
+	    </div>
+            <div class="flex flex-row  border-l border-r border-b">
+                <div class="w-1/2 py-4 px-4 border-r">Comando</div>
+                <div class="w-1/2 py-4 px-4">Descripción</div>
+            </div>
+        </div>
+	
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+            <div class="w-1/2 py-1 px-4 border-r">:w</div>
+	    <div class="w-1/2 py-1 px-4">Guardar cambios del documento</div>
+        </div>
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+            <div class="w-1/2 py-1 px-4 border-r">:q</div>
+	    <div class="w-1/2 py-1 px-4">Salir de vim</div>
+        </div>
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+            <div class="w-1/2 py-1 px-4 border-r">:q!</div>
+	    <div class="w-1/2 py-1 px-4">Salir de vim sin guardar cambios</div>
+        </div>
+    </div>
+    <div>
+        <div class="flex w-10/12 flex-col mx-auto">
+            <div class="w-full border-l border-r border-b py-4 px-4 text-lg font-bold text-center">Más</div>
+            <div class="flex flex-row  border-l border-r border-b">
+                <div class="w-full py-4 px-4 text-center">Más comandos <a href="https://vimhelp.org/quickref.txt.html#quickref">ir</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+
+    <!-- plugin -->
+    <section class="container mx-auto px-6 py-20">
+      <h2 class="text-4xl font-bold text-center  mb-8">Plugins</h2>
+      <div class="flex flex-col">
+    <div>
+        <div class="flex w-10/12 flex-col mx-auto">
+            <div class="w-full border py-4 px-4 text-lg font-bold text-center">Plugins</div>
+        </div>
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+	  <div class="w-1/2 py-1 px-4 border-r">vim plug</div>
+	  <div class="w-1/2 py-1 px-4"><a href="https://github.com/junegunn/vim-plug">Ir</a></div>
+        </div>
+
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+	  <div class="w-1/2 py-1 px-4 border-r">Plug 'morhetz/gruvbox'</div>
+	  <div class="w-1/2 py-1 px-4">Tema</div>
+        </div>
+
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+	  <div class="w-1/2 py-1 px-4 border-r">Plug 'scrooloose/nerdtree'</div>
+	  <div class="w-1/2 py-1 px-4">Árbol de archivos</div>
+        </div>
+
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+	  <div class="w-1/2 py-1 px-4 border-r">Plug 'christoomey/vim-tmux-navigator'</div>
+	  <div class="w-1/2 py-1 px-4">Navegar entre ventanas</div>
+        </div>
+
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+	  <div class="w-1/2 py-1 px-4 border-r">
+	    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } <br />
+	    Plug 'junegunn/fzf.vim' "fuzy files finder
+	  </div>
+	  <div class="w-1/2 py-1 px-4">Buscar archivo</div>
+        </div>
+
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+	  <div class="w-1/2 py-1 px-4 border-r">Plug 'airblade/vim-rooter'</div>
+	  <div class="w-1/2 py-1 px-4">Cambia el directorio actual</div>
+        </div>
+
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+	  <div class="w-1/2 py-1 px-4 border-r">Plug 'tpope/vim-fugitive'</div>
+	  <div class="w-1/2 py-1 px-4">Para git</div>
+        </div>
+
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+	  <div class="w-1/2 py-1 px-4 border-r">Plug 'vim-airline/vim-airline'</div>
+	  <div class="w-1/2 py-1 px-4">Barra de estado</div>
+        </div>
+
+        <div class="flex flex-row w-10/12 mx-auto border-l border-r border-b">
+	  <div class="w-1/2 py-1 px-4 border-r">Plug 'neoclide/coc.nvim', {'branch': 'release'}</div>
+	  <div class="w-1/2 py-1 px-4">Autocompletar</div>
+        </div>
+    </div>
+    </section>
+  </body>
+</html>
+
